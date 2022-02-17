@@ -1,0 +1,15 @@
+server:
+  port: 9090
+  
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/csvdb?useSSL=false&createDatabaseIfNotExist=true
+    username: root
+    password: root
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+    hibernate:
+      ddl-auto: update      
+
